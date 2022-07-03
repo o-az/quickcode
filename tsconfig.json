@@ -23,7 +23,6 @@
     "jsxFragmentFactory": "Fragment",
     "pretty": true,
     "baseUrl": ".",
-    "checkJs": true,
     "sourceMap": true,
     "declaration": true,
     "incremental": true,
