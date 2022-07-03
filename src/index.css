@@ -3,6 +3,9 @@
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: 0px;
+  scrollbar-width: 100px;
 }
 
 html,
@@ -12,11 +15,20 @@ body,
   width: 100%;
   min-width: 100%;
   min-height: 100%;
-  background: #272a36;
+  background: #101118;
 }
 
-#app > div {
+.cm-content {
+  background: #101118;
+}
+
+#app>div {
   height: 100%;
+  background: #101118;
+}
+
+.w-split-bar {
+  width: 1px !important;
 }
 
 *::-webkit-scrollbar {
@@ -26,9 +38,11 @@ body,
 
 *::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  width: 0px;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: rgb(70, 70, 75);
   outline: 0px solid rgb(58, 62, 67);
+  width: 0px;
 }

@@ -7,14 +7,15 @@ import presetWebFonts from '@unocss/preset-web-fonts';
 import presetTypography from '@unocss/preset-typography';
 import presetAttributify from '@unocss/preset-attributify';
 import transformerVariantGroup from '@unocss/transformer-variant-group';
-
+import carbonIcons from '@iconify-json/carbon/icons.json';
 export default defineConfig({
   presets: [
     presetUno(),
     presetWind(),
     presetMini(),
     presetIcons({
-      cdn: 'https://esm.sh/',
+      // carbon: () => import('@iconify-json/carbon/icons.json').then(_ => _.default) as any,
+      // cdn: 'https://esm.sh/',
       extraProperties: { display: 'inline-block', 'vertical-align': 'middle' },
     }),
     presetAttributify(),
