@@ -3,7 +3,7 @@ import { Editor } from '@/components/editor';
 
 export function App() {
   return (
-    <Provider theme={defaultTheme} class="h-full w-[5px]">
+    <Provider theme={defaultTheme} class="h-full">
       <Editor />
     </Provider>
   );
