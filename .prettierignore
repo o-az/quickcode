@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/
+
+/.cache
+/build
+/server-build
+/public/build
+/coverage
+.build
+.cache
+package-lock.json
+pnpm-lock.yaml
+.github
+yarn.lock
+yarn-error.log

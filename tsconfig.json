@@ -1,0 +1,90 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "pretty": true,
+    "baseUrl": ".",
+    "checkJs": true,
+    "sourceMap": true,
+    "declaration": true,
+    "incremental": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "removeComments": true,
+    "declarationMap": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "allowUnusedLabels": true,
+    "noImplicitOverride": true,
+    "preserveConstEnums": true,
+    "preserveWatchOutput": true,
+    "allowUnreachableCode": false,
+    "noUncheckedIndexedAccess": true,
+    "importsNotUsedAsValues": "error",
+    "exactOptionalPropertyTypes": true,
+    "useUnknownInCatchVariables": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "types": [
+      "node",
+      "vite/client",
+      "typed-query-selector"
+    ],
+    "paths": {
+      "react": [
+        "node_modules/preact/compat/"
+      ],
+      "react-dom": [
+        "node_modules/preact/compat/"
+      ],
+      "@/*": [
+        "src/*"
+      ],
+      "~functions/*": [
+        "functions/*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "uno.config.ts"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "ts-node": {
+    "swc": true,
+    "esm": true,
+    "transpileOnly": true,
+    "files": true,
+    "require": [
+      "tsconfig-paths/register"
+    ],
+    "paths": {
+      "~/*": [
+        "scripts/*"
+      ]
+    }
+  }
+}
