@@ -25,7 +25,6 @@ const codeMirrorOptions = (options: ReactCodeMirrorProps) => ({
 
 export function Editor() {
   const [code, setCode] = useState('');
-  console.log({ code });
 
   const formatCode = ({
     event,
@@ -85,7 +84,6 @@ export function Editor() {
         </a>
       </header>
       <Split
-        onDragging={(preSize, nextSize, paneNumber) => console.log({ preSize, nextSize, paneNumber })}
         class="h-full w-full border-none shadow-none"
         renderBar={({ onMouseDown, ...props }) => {
           return (
